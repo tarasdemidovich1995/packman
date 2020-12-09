@@ -1,0 +1,16 @@
+@import './entities/reset.scss';
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}

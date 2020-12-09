@@ -1,0 +1,14 @@
+@import 'src/styles/entities/vars.scss';
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex-grow: 1;
+    background-color: $primary-color;
+  }
+
+}

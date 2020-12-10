@@ -1,0 +1,13 @@
+@import 'src/styles/entities/vars.scss';
+
+.game-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  main {
+    flex-grow: 1;
+    background-color: $secondary-color;
+  }
+}

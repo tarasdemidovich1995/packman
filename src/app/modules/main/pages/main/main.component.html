@@ -1,12 +1,4 @@
 <div class="main-container">
-  <!-- <ul>
-    <li
-      *ngFor="let point of menuPoints; index as i"
-    >
-      <i *ngIf="currentPoint === i" class="fas fa-arrow-right"></i>
-      <button class="btn" [routerLink]="[point.path]">{{ point.name }}</button>
-    </li>
-  </ul> -->
   <app-menu
     [menuPoints]="menuPoints"
     (navigateHandler)="navigateTo($event)"

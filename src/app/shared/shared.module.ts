@@ -3,6 +3,6 @@ import { NgModule } from '@angular/core';
 
 @NgModule({
   imports: [CommonModule],
-  exports: [CommonModule]
+  exports: [CommonModule],
 })
 export class SharedModule {}

@@ -15,26 +15,11 @@ export class MainComponent {
     { name: 'How to play', path: '/main/description' },
     { name: 'Statistics', path: '/main/statistics' }
   ];
-  public currentPoint = 0;
 
   constructor(private router: Router) {}
 
-  @HostListener('window:keyup', ['$event'])
-  public keyEvent(event: KeyboardEvent): void {
-    switch (event.key) {
-      case KEY_CODE.DOWN_ARROW:
-        this.currentPoint = (this.currentPoint + 1) % 4;
-        break;
-      case KEY_CODE.UP_ARROW:
-        this.currentPoint = this.currentPoint
-          ? this.currentPoint - 1
-          : this.menuPoints.length - 1;
-        break;
-      case KEY_CODE.ENTER:
-        this.router.navigate([this.menuPoints[this.currentPoint].path]);
-        break;
-      default:
-        break;
-    }
+  public navigateTo(point: MenuItem): void {
+    this.router.navigate([point.path]);
   }
+
 }

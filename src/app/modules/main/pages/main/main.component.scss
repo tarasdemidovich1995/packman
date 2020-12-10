@@ -7,34 +7,33 @@
   justify-content: center;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-}
+// ul {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-li {
-  margin: 10px 0;
-  width: 350px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
+// li {
+//   margin: 10px 0;
+//   width: 350px;
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+// }
 
-.fas {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  left: 0;
-  color: $text-color;
-  font-size: 2rem;
+// .fas {
+//   position: absolute;
+//   transform: translateY(-50%);
+//   top: 50%;
+//   left: 0;
+//   color: $text-color;
+//   font-size: 2rem;
+// }
 
-}
-
-.btn {
-  font-size: 2rem;
-  font-weight: bold;
-  background-color: transparent;
-  text-transform: uppercase;
-  color: $text-color;
-}
+// .btn {
+//   font-size: 2rem;
+//   font-weight: bold;
+//   background-color: transparent;
+//   text-transform: uppercase;
+//   color: $text-color;
+// }
 

@@ -3,5 +3,6 @@ export enum KEY_CODE {
   LEFT_ARROW = 'ArrowLeft',
   DOWN_ARROW = 'ArrowDown',
   UP_ARROW = 'ArrowUp',
-  ENTER = 'Enter'
+  ENTER = 'Enter',
+  BACKSPACE = 'Backspace'
 }

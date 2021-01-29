@@ -3,6 +3,11 @@
 .main-container {
   min-height: calc(100vh - 132px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  app-controls-tip {
+    margin-top: 40px;
+  }
 }

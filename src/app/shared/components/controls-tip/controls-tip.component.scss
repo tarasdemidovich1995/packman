@@ -1,0 +1,67 @@
+@import 'src/styles/entities/vars.scss';
+
+$btn-size: 36px;
+$btn-margin: 5px;
+$arrow-container-width: calc((#{$btn-size} + #{$btn-margin} * 2) * 3);
+$up-arrow-margin: calc(#{$btn-size} + #{$btn-margin} * 3);
+
+$long-btn-height: $btn-size;
+$long-btn-width: 120px;
+
+.controls-tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    color: $text-color;
+  }
+
+  &__buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__arrows {
+    display: flex;
+    flex-wrap: wrap;
+    width: $arrow-container-width;
+  }
+
+  &__enter {
+    margin-left: 20px;
+  }
+
+  &__backspace {
+    margin-left: 20px;
+  }
+}
+
+.tip-btn {
+  width: $btn-size;
+  height: $btn-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $btn-margin;
+  background-color: $primary-color-light;
+  box-shadow: -5px 5px $primary-color-dark;
+  border-radius: 3px;
+  transition: 0.1s ease-out;
+
+  &_active {
+    transform: translate(-3px, 3px);
+    box-shadow: -2px 2px $primary-color-dark;
+  }
+
+  &_arrow-top {
+    margin-left: $up-arrow-margin;
+    margin-right: $up-arrow-margin;
+  }
+
+  &_enter, &_backspace {
+    width: $long-btn-width;
+    height: $long-btn-height;
+  }
+}
